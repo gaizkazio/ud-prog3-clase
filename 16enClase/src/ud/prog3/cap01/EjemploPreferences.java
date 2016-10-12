@@ -15,7 +15,7 @@ public class EjemploPreferences {
 	// Prueba de preferencias
 	public static void main(String[] args) {
 		String pref = "testzz";
-		String valor = "hola";
+		String valor = "adios";
 		System.out.println( "Valor de la preferencia " + pref +
 				": " + prefs.get( pref, "NO EXISTE" ));
 		System.out.println( "Cambiamos la preferencia a: " + valor );
