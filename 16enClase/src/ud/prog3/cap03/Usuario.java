@@ -297,6 +297,7 @@ public class Usuario implements Serializable {
 		    Connection con = DriverManager.getConnection("jdbc:sqlite:" + nombreBD );
 		    return con;
 		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
 			return null;
 		}
 	}
@@ -317,6 +318,7 @@ public class Usuario implements Serializable {
 				", emails string)");
 			return statement;
 		} catch (SQLException e) {
+			e.printStackTrace();
 			return null;
 		}
 	}

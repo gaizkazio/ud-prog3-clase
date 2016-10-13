@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="ejs"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="D:/GDrive/d/desarrollo/libs/vlcj-3.10.1/vlcj-3.10.1.jar">
@@ -9,6 +10,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/14teoria/lib/sizeOf/SizeOf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ulise/git/ud-prog3-teoria/14teoria/lib/sizeOf/SizeOf.jar"/>
+	<classpathentry kind="lib" path="D:/GDrive/d/desarrollo/libs/sqlite-jdbc4-3.8.2-SNAPSHOT.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
