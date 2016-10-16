@@ -25,7 +25,7 @@ public class JLabelCoche extends JLabel {
 		// 		super( new ImageIcon( "bin/ud/prog3/pr00/coche.png" ) );
 		// Esto se hace para acceder tanto por recurso (jar) como por fichero
 		try {
-			setIcon( new ImageIcon( JLabelCoche.class.getResource( "img/coche.png" ).toURI().toURL() ) );
+			setIcon( new ImageIcon( JLabelCoche.class.getResource( "img/coche.png" ) ) );
 		} catch (Exception e) {
 			System.err.println( "Error en carga de recurso: coche.png no encontrado" );
 			e.printStackTrace();
