@@ -360,7 +360,7 @@ public class BD {
 		for (char c : string.toCharArray()) {
 			if ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZñÑáéíóúüÁÉÍÓÚÚ.,:;-_(){}[]-+*=<>'\"¿?¡!&%$@#/\\0123456789".indexOf(c)>=0) ret.append(c);
 		}
-		return ret.toString();
+		return ret.toString().replaceAll( "'", "''" );
 	}
 	
 

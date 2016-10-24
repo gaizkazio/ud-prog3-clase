@@ -140,4 +140,16 @@ public class BDTest {
 		BD.cerrarBD( con, stat );
 	}
 	
+	@Test
+	public void usuarioInsertCarEspTest() {
+		Connection con = BD.initBD( "bd-test" );
+		Statement stat = BD.reiniciarBD( con );
+		Usuario u = new Usuario( "n", "p", "Tim", "O'Reilly", 9, 
+				TipoUsuario.Admin, new ArrayList<>() );
+		assertEquals( true, BD.usuarioInsert( stat, u ) );
+		ArrayList<Usuario> lU = BD.usuarioSelect( stat, "nick='n'" );
+		assertEquals( 1, lU.size() );
+		BD.cerrarBD( con, stat );
+	}
+	
 }
