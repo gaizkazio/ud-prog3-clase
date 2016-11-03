@@ -7,8 +7,8 @@ public class LeerFicheroRec {
 	private static void leerRecursoRec( BufferedReader br ) throws IOException {
 		String linea = br.readLine();
 		if (linea!=null) {
-			if (!linea.isEmpty()) System.out.println( linea );
 			leerRecursoRec( br );
+			if (!linea.isEmpty()) System.out.println( linea );
 		}
 	}
 	@SuppressWarnings("unused")
