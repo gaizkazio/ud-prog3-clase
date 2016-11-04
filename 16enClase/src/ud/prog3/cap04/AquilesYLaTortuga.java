@@ -25,9 +25,21 @@ public class AquilesYLaTortuga {
 	}
 	
 	// Algoritmo recursivo
-	public static double cuandoSeEncuentran() {
+	// En t1 Aquiles no ha alcanzado a la tortuga y en t2 ya la ha pasado
+	public static double cuandoSeEncuentran( double t1, double t2 ) {
 		numLlams++; // Auxiliar para contar el número de llamadas
-		return 0;  // TODO ???
+		if (t2-t1<=0.000000001) {
+			return t1;
+		} else {
+			double tMedio = (t1 + t2) / 2;
+			double dondeAquiles = dondeEstaAquiles( tMedio );
+			double dondeTortuga = dondeEstaLaTortuga( tMedio );
+			if (dondeAquiles<dondeTortuga) {  // Aquiles no ha llegado
+				return cuandoSeEncuentran( tMedio, t2 );
+			} else {  // Aquiles ha pasado a la tortuga
+				return cuandoSeEncuentran(t1, tMedio);
+			}
+		}
 	}
 	
 	private static int numLlams = 0;
@@ -39,7 +51,8 @@ public class AquilesYLaTortuga {
 		System.out.println( "Solución:" );
 		
 		try {
-			double tSol = 0; // TODO ?? cuandoSeEncuentran( );
+			double tSol = cuandoSeEncuentran( 0,  1000000 );
+			System.out.println( "Llamadas: " + numLlams );
 			System.out.println( "Tiempo de encuentro = " + tSol );
 			System.out.println( "  Distancia de encuentro = " + dondeEstaAquiles(tSol));
 		} catch (StackOverflowError e) {
