@@ -92,6 +92,7 @@ public class AquilesYLaTortugaEnVentana {
 		JButton bSimular, bStop, bPlay;
 		JTextField tfTiempoFinal;
 		JLabel lAquiles, lTortuga, lMetrosIni, lMetrosFin;
+		JLabelGrafico lAquilesIni, lAquilesFin;
 		JPanel pCarrera;
 		JLabel lMensaje;
 		double posAquiles = 0;
@@ -166,10 +167,14 @@ public class AquilesYLaTortugaEnVentana {
 			getContentPane().add( pSup, BorderLayout.NORTH );
 				pCarrera = new JPanel(); pCarrera.setLayout( null ); pCarrera.setPreferredSize( new Dimension( 800, 400 ) );
 				pCarrera.setBackground( Color.white );
-				lAquiles = new JLabelGrafico( (int)GRAF_AQUILES_ANCHO, (int)GRAF_AQUILES_ALTO, "img/Aquiles.jpg", GRAF_AQUILES_REFX, GRAF_AQUILES_REFY );
+				lAquiles = new JLabelGrafico( (int)GRAF_AQUILES_ANCHO, (int)GRAF_AQUILES_ALTO, "img/Aquiles.png", GRAF_AQUILES_REFX, GRAF_AQUILES_REFY );
+				lAquilesIni = new JLabelGrafico( (int)GRAF_AQUILES_ANCHO, (int)GRAF_AQUILES_ALTO, "img/Aquiles.png", GRAF_AQUILES_REFX, GRAF_AQUILES_REFY );
+				lAquilesFin = new JLabelGrafico( (int)GRAF_AQUILES_ANCHO, (int)GRAF_AQUILES_ALTO, "img/Aquiles.png", GRAF_AQUILES_REFX, GRAF_AQUILES_REFY );
+				lAquilesIni.setTransparencia( 0.6f ); lAquilesIni.setVisible( false );
+				lAquilesFin.setTransparencia( 0.6f ); lAquilesFin.setVisible( false );
 				lTortuga = new JLabelGrafico( (int)GRAF_TORTUGA_ANCHO, (int)GRAF_TORTUGA_ALTO, "img/tortuga.png", GRAF_TORTUGA_REFX, GRAF_TORTUGA_REFY );
 				pCarrera.add( lTortuga );
-				pCarrera.add( lAquiles );
+				pCarrera.add( lAquiles ); pCarrera.add( lAquilesIni ); pCarrera.add( lAquilesFin );
 				lMetrosIni = new JLabel( "0" );
 				lMetrosFin = new JLabel( "" + vistaPantalla ); lMetrosFin.setHorizontalAlignment( SwingConstants.RIGHT );
 				lMetrosIni.setFont( new Font( "Arial", Font.PLAIN, 18 ) );
@@ -202,6 +207,8 @@ public class AquilesYLaTortugaEnVentana {
 			tfVistaPantalla.addFocusListener( new EscFocoVal( tfVistaPantalla ) );
 			tfTiempoFinal.addFocusListener( new EscFocoVal( tfTiempoFinal ) );
 			bSimular.addActionListener( (e) -> {
+				lAquilesIni.setVisible( false );
+				lAquilesFin.setVisible( false );
 				if (hilo==null) {
 					hilo = new HiloSimulacion();
 					hilo.start();
@@ -210,6 +217,8 @@ public class AquilesYLaTortugaEnVentana {
 				}
 			} );
 			bStop.addActionListener( (e) -> {
+				lAquilesIni.setVisible( false );
+				lAquilesFin.setVisible( false );
 				tiempoInicial = 0;
 				try {
 					tiempoFinal = Double.parseDouble( tfTiempoFinal.getText() );
@@ -219,6 +228,10 @@ public class AquilesYLaTortugaEnVentana {
 				recolocaCarrera();
 			} );
 			bPlay.addActionListener( (e) -> {
+				lAquilesIni.setVisible( true );
+				lAquilesFin.setVisible( true );
+				muestraAquiles( lAquilesIni, tiempoInicial );
+				muestraAquiles( lAquilesFin, tiempoFinal );
 				double tiempoMedio = (tiempoInicial + tiempoFinal) / 2;
 				ponAquiles( dondeEstaAquiles( tiempoMedio ) );
 				ponTortuga( dondeEstaLaTortuga( tiempoMedio ) );
@@ -243,6 +256,11 @@ public class AquilesYLaTortugaEnVentana {
 			this.posAquiles = posAquiles;
 			lAquiles.setLocation( (int) (posAquiles / vistaPantalla * pCarrera.getWidth() - GRAF_AQUILES_REFX),
 					              (int) (pCarrera.getHeight() - 50 - GRAF_AQUILES_REFY) );
+		}
+		public void muestraAquiles( JLabel labelAquiles, double tAquiles ) {
+			double posAquiles = dondeEstaAquiles( tAquiles );
+			labelAquiles.setLocation( (int) (posAquiles / vistaPantalla * pCarrera.getWidth() - GRAF_AQUILES_REFX),
+					                  (int) (pCarrera.getHeight() - 50 - GRAF_AQUILES_REFY) );
 		}
 		public void ponTortuga( double posTortuga ) {
 			this.posTortuga = posTortuga;
@@ -324,6 +342,7 @@ public class AquilesYLaTortugaEnVentana {
 	public static class JLabelGrafico extends JLabel {
 		double refx = -1, refy = -1;   // Punto de referencia  (negativo si no existe)
 		int imagenAncho = -1, imagenAlto = -1;  // Tamaño original imagen
+		float opacidad = -1.0f;  // Opacidad (negativo = no se considera. En caso contrario en rango 0-1)
 		
 		/** Construye y devuelve el JLabel del gráfico con el tamaño y nombre de fichero dado
 		 * @param ancho	Ancho en pixels
@@ -370,6 +389,13 @@ public class AquilesYLaTortugaEnVentana {
 			miGiro = -miGiro;  // Cambio el sentido del giro (el giro en la pantalla es en sentido horario (inverso))
 			miGiro = miGiro + Math.PI/2; // Sumo 90º para que corresponda al origen OX (el gráfico del coche apunta hacia arriba (en lugar de derecha OX))
 		}
+
+		/** Cambia la opacidad de la imagen
+		 * @param opacity	Valor de opacidad en el rango: 0.0f = transparente, 1.0f = opaco
+		 */
+		public void setTransparencia( float opacidad ) {
+			this.opacidad = opacidad;
+		}
 		
 		// Redefinición del paintComponent para que se escale y se rote el gráfico
 		@Override
@@ -381,7 +407,12 @@ public class AquilesYLaTortugaEnVentana {
 			g2.setRenderingHint(RenderingHints.KEY_RENDERING,RenderingHints.VALUE_RENDER_QUALITY);
 			g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);	
 	        g2.rotate( miGiro, getWidth()/2, getHeight()/2 );  // Prepara rotación
+	        Composite old = g2.getComposite();
+	        if (opacidad>=0.0f) {
+		        g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacidad));
+	        }
 	        g2.drawImage( img, 0, 0, getWidth(), getHeight(), null );  // Dibujado de la imagen
+	        g2.setComposite(old);	        
 	        if (refx>=0 && refy>=0) {  // Si hay punto de referencia lo dibuja
 	        	double centrox = refx/imagenAncho*getWidth();
 	        	double centroy = refy/imagenAlto*getHeight();
