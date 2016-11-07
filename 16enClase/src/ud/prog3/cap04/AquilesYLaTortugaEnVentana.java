@@ -93,6 +93,7 @@ public class AquilesYLaTortugaEnVentana {
 		JTextField tfTiempoFinal;
 		JLabel lAquiles, lTortuga, lMetrosIni, lMetrosFin;
 		JLabelGrafico lAquilesIni, lAquilesFin;
+		JLabelGrafico lTortugaIni, lTortugaFin;
 		JPanel pCarrera;
 		JLabel lMensaje;
 		double posAquiles = 0;
@@ -173,7 +174,11 @@ public class AquilesYLaTortugaEnVentana {
 				lAquilesIni.setTransparencia( 0.6f ); lAquilesIni.setVisible( false );
 				lAquilesFin.setTransparencia( 0.6f ); lAquilesFin.setVisible( false );
 				lTortuga = new JLabelGrafico( (int)GRAF_TORTUGA_ANCHO, (int)GRAF_TORTUGA_ALTO, "img/tortuga.png", GRAF_TORTUGA_REFX, GRAF_TORTUGA_REFY );
-				pCarrera.add( lTortuga );
+				lTortugaIni = new JLabelGrafico( (int)GRAF_TORTUGA_ANCHO, (int)GRAF_TORTUGA_ALTO, "img/tortuga.png", GRAF_TORTUGA_REFX, GRAF_TORTUGA_REFY );
+				lTortugaFin = new JLabelGrafico( (int)GRAF_TORTUGA_ANCHO, (int)GRAF_TORTUGA_ALTO, "img/tortuga.png", GRAF_TORTUGA_REFX, GRAF_TORTUGA_REFY );
+				lTortugaIni.setTransparencia( 0.6f ); lTortugaIni.setVisible( false );
+				lTortugaFin.setTransparencia( 0.6f ); lTortugaFin.setVisible( false );
+				pCarrera.add( lTortuga ); pCarrera.add( lTortugaIni ); pCarrera.add( lTortugaFin );
 				pCarrera.add( lAquiles ); pCarrera.add( lAquilesIni ); pCarrera.add( lAquilesFin );
 				lMetrosIni = new JLabel( "0" );
 				lMetrosFin = new JLabel( "" + vistaPantalla ); lMetrosFin.setHorizontalAlignment( SwingConstants.RIGHT );
@@ -207,8 +212,8 @@ public class AquilesYLaTortugaEnVentana {
 			tfVistaPantalla.addFocusListener( new EscFocoVal( tfVistaPantalla ) );
 			tfTiempoFinal.addFocusListener( new EscFocoVal( tfTiempoFinal ) );
 			bSimular.addActionListener( (e) -> {
-				lAquilesIni.setVisible( false );
-				lAquilesFin.setVisible( false );
+				lAquilesIni.setVisible( false ); lAquilesFin.setVisible( false );
+				lTortugaIni.setVisible( false ); lTortugaFin.setVisible( false );
 				if (hilo==null) {
 					hilo = new HiloSimulacion();
 					hilo.start();
@@ -217,8 +222,8 @@ public class AquilesYLaTortugaEnVentana {
 				}
 			} );
 			bStop.addActionListener( (e) -> {
-				lAquilesIni.setVisible( false );
-				lAquilesFin.setVisible( false );
+				lAquilesIni.setVisible( false ); lAquilesFin.setVisible( false );
+				lTortugaIni.setVisible( false ); lTortugaFin.setVisible( false );
 				tiempoInicial = 0;
 				try {
 					tiempoFinal = Double.parseDouble( tfTiempoFinal.getText() );
@@ -228,10 +233,12 @@ public class AquilesYLaTortugaEnVentana {
 				recolocaCarrera();
 			} );
 			bPlay.addActionListener( (e) -> {
-				lAquilesIni.setVisible( true );
-				lAquilesFin.setVisible( true );
+				lAquilesIni.setVisible( true ); lAquilesFin.setVisible( true );
+				lTortugaIni.setVisible( true ); lTortugaFin.setVisible( true );
 				muestraAquiles( lAquilesIni, tiempoInicial );
 				muestraAquiles( lAquilesFin, tiempoFinal );
+				muestraLaTortuga( lTortugaIni, tiempoInicial );
+				muestraLaTortuga( lTortugaFin, tiempoFinal );
 				double tiempoMedio = (tiempoInicial + tiempoFinal) / 2;
 				ponAquiles( dondeEstaAquiles( tiempoMedio ) );
 				ponTortuga( dondeEstaLaTortuga( tiempoMedio ) );
@@ -266,6 +273,11 @@ public class AquilesYLaTortugaEnVentana {
 			this.posTortuga = posTortuga;
 			lTortuga.setLocation( (int) (posTortuga / vistaPantalla * pCarrera.getWidth() - GRAF_TORTUGA_REFX),
 		                          (int) (pCarrera.getHeight() - 50 - GRAF_TORTUGA_REFY) );
+		}
+		public void muestraLaTortuga( JLabel labelTortuga, double tTortuga ) {
+			double posTortuga = dondeEstaLaTortuga( tTortuga );
+			labelTortuga.setLocation( (int) (posTortuga / vistaPantalla * pCarrera.getWidth() - GRAF_TORTUGA_REFX),
+					                  (int) (pCarrera.getHeight() - 50 - GRAF_TORTUGA_REFY) );
 		}
 		
 		private class EscFocoVal implements FocusListener {

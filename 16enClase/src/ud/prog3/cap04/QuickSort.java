@@ -92,9 +92,9 @@ public class QuickSort {
 				if (i==marca)
 					salida.print( "*" + l[i] + "* " );
 				else if (i==desde)
-					salida.print( l[i] + " " );
+					salida.print( "->" + l[i] + " " );
 				else if (i==hasta)
-					salida.print( l[i] + " " );
+					salida.print( l[i] + "<- " );
 				else
 					salida.print( l[i] + " " );
 				if (i==marcaInt)
@@ -112,9 +112,9 @@ public class QuickSort {
 				if (i==marca)
 					{ salida.print( "*" + l[i] + "* " ); recien = false; }
 				else if (i==desde)
-					{ salida.print( l[i] + " " ); recien = false; }
+					{ salida.print( "->" + l[i] + " " ); recien = false; }
 				else if (i==hasta)
-					{ salida.print( l[i] + " " ); recien = false; }
+					{ salida.print( l[i] + "<- " ); recien = false; }
 				else
 					if (hasta-desde<25) { salida.print( l[i] + " " ); recien = false; }
 					else { if (!recien) { salida.print( l[i] + " (...) " ); recien = true; } }
