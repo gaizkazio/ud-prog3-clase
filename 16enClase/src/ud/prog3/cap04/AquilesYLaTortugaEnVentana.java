@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class AquilesYLaTortugaEnVentana {
+public class AquilesYLaTortugaEnVentana {			
 	
 	public static double VEL_AQUILES = 10;   // metros / sg
 	public static double VEL_TORTUGA = 0.5;  // m/sg (0.05m/sg = 1 metro cada 20 segs) 

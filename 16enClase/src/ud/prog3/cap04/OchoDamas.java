@@ -34,11 +34,22 @@ public class OchoDamas extends JFrame {
 
 	public boolean resolverTableroDesdeFila( JLabel[][] tablero, int fila ) {
 		try { Thread.sleep(100); } catch (Exception e) {}
-		// TODO Aquí cambiar y hacer:
-		tablero[0][0].setText( "D" );
-		tablero[1][0].setText( "D" );
-		lMensaje.setText( "Es correcto? " + esPosicionCorrecta(tablero) );
-		return esPosicionCorrecta(tablero);
+		if (fila==8) {  // Caso base
+			lMensaje.setText( "¡Problema resuelto!" );
+			return true;
+		} else {  // Caso general
+			for (int col=0; col<8; col++) {
+				try {final int colu = col; SwingUtilities.invokeAndWait( () -> {  // Visualizar en swing el cambio de dama
+					tablero[fila][colu].setText( "D" ); }); } catch (Exception e) {}
+				try { Thread.sleep(50); } catch (Exception e) {}
+				if (esPosicionCorrecta(tablero)) {
+					if (resolverTableroDesdeFila( tablero, fila+1 ))
+						return true;
+				}
+				tablero[fila][col].setText( " " );
+			}
+			return false;
+		}
 	}
 	
 	public boolean esPosicionCorrecta( JLabel[][] tablero ) {
