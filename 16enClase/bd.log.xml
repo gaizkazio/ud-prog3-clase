@@ -1,0 +1,1391 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-10-24T09:10:33</date>
+  <millis>1477293033716</millis>
+  <sequence>0</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:33</date>
+  <millis>1477293033942</millis>
+  <sequence>1</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034173</millis>
+  <sequence>2</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034285</millis>
+  <sequence>3</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034400</millis>
+  <sequence>4</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034522</millis>
+  <sequence>5</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick3', 'pass3', 'nom3', 'ape3', 3, 0, 'Invitado', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034541</millis>
+  <sequence>6</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034551</millis>
+  <sequence>7</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034556</millis>
+  <sequence>8</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:34</date>
+  <millis>1477293034820</millis>
+  <sequence>9</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035063</millis>
+  <sequence>10</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035088</millis>
+  <sequence>11</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>SEVERE</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Error en BD	insert into usuario values('n', 'p', 'Tim', 'O'Reilly', 9, 0, 'Admin', '')</message>
+  <exception>
+    <message>java.sql.SQLException: near "Reilly": syntax error</message>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>throwex</method>
+      <line>397</line>
+    </frame>
+    <frame>
+      <class>org.sqlite.core.NativeDB</class>
+      <method>_exec</method>
+    </frame>
+    <frame>
+      <class>org.sqlite.jdbc3.JDBC3Statement</class>
+      <method>executeUpdate</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+      <method>usuarioInsert</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>ud.prog3.cap03.ejemploPartidas.BDTest</class>
+      <method>usuarioInsertCarEspTest</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke0</method>
+    </frame>
+    <frame>
+      <class>sun.reflect.NativeMethodAccessorImpl</class>
+      <method>invoke</method>
+      <line>62</line>
+    </frame>
+    <frame>
+      <class>sun.reflect.DelegatingMethodAccessorImpl</class>
+      <method>invoke</method>
+      <line>43</line>
+    </frame>
+    <frame>
+      <class>java.lang.reflect.Method</class>
+      <method>invoke</method>
+      <line>498</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod$1</class>
+      <method>runReflectiveCall</method>
+      <line>50</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.model.ReflectiveCallable</class>
+      <method>run</method>
+      <line>12</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.model.FrameworkMethod</class>
+      <method>invokeExplosively</method>
+      <line>47</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.InvokeMethod</class>
+      <method>evaluate</method>
+      <line>17</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.RunBefores</class>
+      <method>evaluate</method>
+      <line>26</line>
+    </frame>
+    <frame>
+      <class>org.junit.internal.runners.statements.RunAfters</class>
+      <method>evaluate</method>
+      <line>27</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runLeaf</method>
+      <line>325</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>78</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.BlockJUnit4ClassRunner</class>
+      <method>runChild</method>
+      <line>57</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$3</class>
+      <method>run</method>
+      <line>290</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$1</class>
+      <method>schedule</method>
+      <line>71</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>runChildren</method>
+      <line>288</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>access$000</method>
+      <line>58</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner$2</class>
+      <method>evaluate</method>
+      <line>268</line>
+    </frame>
+    <frame>
+      <class>org.junit.runners.ParentRunner</class>
+      <method>run</method>
+      <line>363</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference</class>
+      <method>run</method>
+      <line>86</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.TestExecution</class>
+      <method>run</method>
+      <line>38</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>459</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>runTests</method>
+      <line>678</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>run</method>
+      <line>382</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jdt.internal.junit.runner.RemoteTestRunner</class>
+      <method>main</method>
+      <line>192</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035148</millis>
+  <sequence>12</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035159</millis>
+  <sequence>13</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035263</millis>
+  <sequence>14</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035478</millis>
+  <sequence>15</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035719</millis>
+  <sequence>16</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035721</millis>
+  <sequence>17</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035724</millis>
+  <sequence>18</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035727</millis>
+  <sequence>19</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035731</millis>
+  <sequence>20</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:35</date>
+  <millis>1477293035972</millis>
+  <sequence>21</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036209</millis>
+  <sequence>22</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036332</millis>
+  <sequence>23</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036443</millis>
+  <sequence>24</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036553</millis>
+  <sequence>25</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick3', 'pass3', 'nom3', 'ape3', 3, 0, 'Invitado', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036651</millis>
+  <sequence>26</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick1', 1477293035729, 100)</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036762</millis>
+  <sequence>27</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick1', 1477292935729, 250)</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036868</millis>
+  <sequence>28</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick1', 1477292835729, 50)</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036984</millis>
+  <sequence>29</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick3', 1477293035729, 72)</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036985</millis>
+  <sequence>30</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick1'</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036986</millis>
+  <sequence>31</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick2'</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036986</millis>
+  <sequence>32</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick3'</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036987</millis>
+  <sequence>33</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036988</millis>
+  <sequence>34</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where puntuacion&gt;200</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036989</millis>
+  <sequence>35</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick1' AND puntuacion&gt;70</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036991</millis>
+  <sequence>36</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:36</date>
+  <millis>1477293036994</millis>
+  <sequence>37</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037244</millis>
+  <sequence>38</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037465</millis>
+  <sequence>39</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037586</millis>
+  <sequence>40</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037698</millis>
+  <sequence>41</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037819</millis>
+  <sequence>42</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD modificada 1 fila	update usuario set password='pass1',  nombre='nom1',  apellidos='cambio',  telefono=7,  fechaultimologin=0,  tipo='Admin',  emails='' where nick='nick1'</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037821</millis>
+  <sequence>43</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario where nick='nick1'</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037824</millis>
+  <sequence>44</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037831</millis>
+  <sequence>45</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037834</millis>
+  <sequence>46</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037836</millis>
+  <sequence>47</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037841</millis>
+  <sequence>48</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037844</millis>
+  <sequence>49</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:37</date>
+  <millis>1477293037847</millis>
+  <sequence>50</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:38</date>
+  <millis>1477293038195</millis>
+  <sequence>51</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:38</date>
+  <millis>1477293038366</millis>
+  <sequence>52</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:38</date>
+  <millis>1477293038372</millis>
+  <sequence>53</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:10:38</date>
+  <millis>1477293038376</millis>
+  <sequence>54</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-10-24T09:18:28</date>
+  <millis>1477293508366</millis>
+  <sequence>0</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:28</date>
+  <millis>1477293508635</millis>
+  <sequence>1</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:28</date>
+  <millis>1477293508868</millis>
+  <sequence>2</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:28</date>
+  <millis>1477293508987</millis>
+  <sequence>3</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509162</millis>
+  <sequence>4</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509310</millis>
+  <sequence>5</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick3', 'pass3', 'nom3', 'ape3', 3, 0, 'Invitado', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509325</millis>
+  <sequence>6</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509339</millis>
+  <sequence>7</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509363</millis>
+  <sequence>8</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509601</millis>
+  <sequence>9</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509848</millis>
+  <sequence>10</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:29</date>
+  <millis>1477293509989</millis>
+  <sequence>11</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('n', 'p', 'Tim', 'O''Reilly', 9, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510005</millis>
+  <sequence>12</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario where nick='n'</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510014</millis>
+  <sequence>13</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510023</millis>
+  <sequence>14</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510028</millis>
+  <sequence>15</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510148</millis>
+  <sequence>16</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510382</millis>
+  <sequence>17</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510609</millis>
+  <sequence>18</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510610</millis>
+  <sequence>19</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510611</millis>
+  <sequence>20</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510612</millis>
+  <sequence>21</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510614</millis>
+  <sequence>22</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:30</date>
+  <millis>1477293510846</millis>
+  <sequence>23</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511077</millis>
+  <sequence>24</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511194</millis>
+  <sequence>25</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511323</millis>
+  <sequence>26</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511448</millis>
+  <sequence>27</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick3', 'pass3', 'nom3', 'ape3', 3, 0, 'Invitado', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511564</millis>
+  <sequence>28</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick1', 1477293510613, 100)</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511680</millis>
+  <sequence>29</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick1', 1477293410613, 250)</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511791</millis>
+  <sequence>30</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick1', 1477293310613, 50)</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511902</millis>
+  <sequence>31</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into partida values('nick3', 1477293510613, 72)</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511913</millis>
+  <sequence>32</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick1'</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511919</millis>
+  <sequence>33</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick2'</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511931</millis>
+  <sequence>34</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick3'</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511938</millis>
+  <sequence>35</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511945</millis>
+  <sequence>36</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where puntuacion&gt;200</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511948</millis>
+  <sequence>37</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from partida where usuario_nick='nick1' AND puntuacion&gt;70</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511952</millis>
+  <sequence>38</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:31</date>
+  <millis>1477293511956</millis>
+  <sequence>39</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:32</date>
+  <millis>1477293512208</millis>
+  <sequence>40</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Reiniciada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:32</date>
+  <millis>1477293512725</millis>
+  <sequence>41</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:32</date>
+  <millis>1477293512967</millis>
+  <sequence>42</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513106</millis>
+  <sequence>43</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513234</millis>
+  <sequence>44</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD modificada 1 fila	update usuario set password='pass1',  nombre='nom1',  apellidos='cambio',  telefono=7,  fechaultimologin=0,  tipo='Admin',  emails='' where nick='nick1'</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513238</millis>
+  <sequence>45</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario where nick='nick1'</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513246</millis>
+  <sequence>46</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513258</millis>
+  <sequence>47</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513268</millis>
+  <sequence>48</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513271</millis>
+  <sequence>49</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513300</millis>
+  <sequence>50</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Conectada base de datos bd-test</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513302</millis>
+  <sequence>51</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Creada base de datos</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513304</millis>
+  <sequence>52</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513416</millis>
+  <sequence>53</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick1', 'pass1', 'nom1', 'ape1', 1, 0, 'Admin', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513550</millis>
+  <sequence>54</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD añadida 1 fila	insert into usuario values('nick2', 'pass2', 'nom2', 'ape2', 2, 0, 'Cliente', '')</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513559</millis>
+  <sequence>55</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>BD	select * from usuario</message>
+</record>
+<record>
+  <date>2016-10-24T09:18:33</date>
+  <millis>1477293513565</millis>
+  <sequence>56</sequence>
+  <logger>ud.prog3.cap03.ejemploPartidas.BD</logger>
+  <level>INFO</level>
+  <class>ud.prog3.cap03.ejemploPartidas.BD</class>
+  <method>log</method>
+  <thread>1</thread>
+  <message>Cierre de base de datos</message>
+</record>
+</log>
