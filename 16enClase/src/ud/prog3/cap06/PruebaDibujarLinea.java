@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 @SuppressWarnings("serial")
@@ -23,16 +24,28 @@ public class PruebaDibujarLinea extends JPanel {
 	}
 	
 	static PruebaDibujarLinea p = new PruebaDibujarLinea();
+	private static JFrame f;
 	public static void main(String[] args) {
-		JFrame f = new JFrame();
+		f = new JFrame();
 		f.setDefaultCloseOperation( JFrame.DISPOSE_ON_CLOSE );
 		f.setSize( 800, 600 );
 		// f.setLocation( new Point(2000,0) ); // Cambia la posición de la ventana
 		f.add( p, BorderLayout.CENTER );
 		f.setVisible( true );
+		/* 
+		try {
+			SwingUtilities.invokeAndWait( new Runnable() {
+				@Override
+				public void run() {  
+					// Esto se ejecutará cuando toda la actividad de dibujado de swing 
+					// haya acabado
+				}
+			});
+		} catch (Exception e1) {}
+		*/
 		Graphics2D g = (Graphics2D) p.getGraphics();
 		dibujarLinea( g, Color.black ); // Por qué esta no la dibuja?...
-		try { Thread.sleep(100); } catch (InterruptedException e) {}
+		try { Thread.sleep(100); } catch (InterruptedException e) {}  // Y si la pausa es menor?
 		dibujarLinea( g, Color.blue ); // Y esta sí... pero relativamente...?
 	}
 	
