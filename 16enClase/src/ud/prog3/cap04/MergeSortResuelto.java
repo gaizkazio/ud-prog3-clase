@@ -7,11 +7,18 @@ public class MergeSortResuelto {
 
 	/** Ordena recursivamente (mergesort) un array de enteros
 	 * @param nums	Array de enteros a ordenar
+	 */
+	public static void mergeSort( int[] nums ) {
+		mergeSort( nums, 0, nums.length-1 );
+	}
+	
+	/** Ordena recursivamente (mergesort) un array de enteros
+	 * @param nums	Array de enteros a ordenar
 	 * @param ini	Posición inicial de la ordenación
 	 * @param fin	Posición final de la ordenación (inclusive)
 	 */
 	public static void mergeSort( int[] nums, int ini, int fin ) {
-		for (int i=0;i<profLlams;i++) System.out.print( " "); System.out.println( "Entrando en merge: " + ini + "," + fin ); profLlams++; 
+		// for (int i=0;i<profLlams;i++) System.out.print( " "); System.out.println( "Entrando en merge: " + ini + "," + fin ); profLlams++; 
 		if (ini>=fin) {
 			// Caso base, nada que ordenar
 		} else {
