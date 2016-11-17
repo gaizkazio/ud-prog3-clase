@@ -34,7 +34,7 @@ public class EjemploInvoke extends JFrame implements ActionListener
 		setTitle("Ejemplo ventana");
 		setBounds(0, 0, 600, 450);
 		setMinimumSize(new Dimension(720, 400));
-		setLocationRelativeTo(null);
+		setLocation(2000,100);
 		// No debería hacerse el setVisible hasta que la ventana esté construida
 		setVisible(true);
 

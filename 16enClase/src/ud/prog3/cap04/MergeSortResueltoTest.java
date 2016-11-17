@@ -55,6 +55,12 @@ public class MergeSortResueltoTest {
 	@Test(expected = NullPointerException.class) 
     public void testMergeSortNull() {  // Test de excepción array nulo
 		mergeSort( null );
+//		try {
+//			mergeSort( null );
+//			fail( "No nullpointer" );
+//		} catch (NullPointerException e) {
+//			assertTrue( true );
+//		}
 	}
 
 }
