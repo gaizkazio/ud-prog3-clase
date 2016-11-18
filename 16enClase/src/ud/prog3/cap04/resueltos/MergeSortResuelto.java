@@ -1,4 +1,4 @@
-package ud.prog3.cap04;
+package ud.prog3.cap04.resueltos;
 
 import java.util.Random;
 

@@ -1,8 +1,9 @@
-package ud.prog3.cap04;
+package ud.prog3.cap04.resueltos;
 
 import static org.junit.Assert.*;
+import static ud.prog3.cap04.resueltos.MergeSortResuelto.*;
+
 import org.junit.Test;
-import static ud.prog3.cap04.MergeSortResuelto.*;
 
 import java.util.Random;
 
